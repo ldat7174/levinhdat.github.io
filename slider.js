@@ -1,6 +1,7 @@
 new Swiper('.swiper', { 
     loop: true, 
     spaceBetween: 30, 
+    slidesPerView: 3,
 
     // Pagination bullets 
     pagination: { 
