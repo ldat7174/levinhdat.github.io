@@ -1,4 +1,4 @@
-new Swiper('.card-wrapper', { 
+new Swiper('.swiper', { 
     loop: true, 
     spaceBetween: 30, 
 
