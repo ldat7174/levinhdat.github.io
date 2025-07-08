@@ -44,3 +44,19 @@ searchForm.addEventListener("click", () => {
 
 // Expand sidebar by default on large screens
 if (window.innerWidth > 768) sidebar.classList.remove("collapsed");
+
+function loadPage(page, clickedLink) 
+{
+  const iframe = document.getElementById("content-frame");
+  iframe.src = page;
+
+  // Xoá class "active" khỏi tất cả các liên kết
+  document.querySelectorAll(".menu-link").forEach(link => {
+    link.classList.remove("active");
+  });
+
+  // Thêm class "active" vào nút vừa được click
+  if (clickedLink) {
+    clickedLink.classList.add("active");
+  }
+}
