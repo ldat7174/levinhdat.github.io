@@ -37,13 +37,13 @@
                     <!-- Sidebar Menu -->
                     <ul class="menu-list">
                         <li class="menu-item">
-                            <a href="#" class="menu-link active">
+                            <a href="#" class="menu-link active" onclick="loadPage('draw.html', this)">
                                 <span class="material-symbols-rounded">dashboard</span>
                                 <span class="menu-label">Dashboard</span>
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a href="#" class="menu-link">
+                            <a href="#" class="menu-link" onclick="loadPage('Memory-Card-Game.html', this)">
                                 <span class="material-symbols-rounded">insert_chart</span>
                                 <span class="menu-label">Analytics</span>
                             </a>
@@ -97,8 +97,7 @@
 
             <!-- Site main content -->
             <div class="main-content">
-                <h1 class="page-title">Dashboard Overview</h1>
-                <p class="card">Welcome to your dashboard! Use the menu to navigate, toggle the sidebar, or switch between light and dark themes to personalize your experience.</p>
+                <iframe id="content-frame" src="profile.html" width="100%" height="100%"></iframe>
             </div>
         </div>
 
