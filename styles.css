@@ -309,6 +309,11 @@ body.dark-theme .theme-toggle-indicator {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+.main-content iframe {
+  height: calc(100vh - 60px); /* Hoặc phù hợp layout bạn */
+  border: none;
+}
+
 /* Responsive media query code for small screens */
 @media (max-width: 768px) {
   body::before {
