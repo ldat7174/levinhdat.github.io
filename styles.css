@@ -358,4 +358,7 @@ body.dark-theme .theme-toggle-indicator {
   .container .main-content {
     padding: 30px 20px;
   }
+  .hidden {
+    display: none !important;
+  }
 }
