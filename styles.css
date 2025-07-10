@@ -360,6 +360,6 @@ body.dark-theme .theme-toggle-indicator {
   }
 
   .hidden {
-    display: none;
+    display: none !important;
   }
 }
