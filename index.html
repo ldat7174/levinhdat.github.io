@@ -56,20 +56,20 @@
                         </li>
                         <li class="menu-item">
                             <a href="#" class="menu-link">
-                                <span class="material-symbols-rounded">star</span>
-                                <span class="menu-label">Favourites</span>
+                                <span class="material-symbols-rounded" onclick="loadPage('hangman.html', this)">star</span>
+                                <span class="menu-label">Hangman</span>
                             </a>
                         </li>
                         <li class="menu-item">
                             <a href="#" class="menu-link">
-                                <span class="material-symbols-rounded">storefront</span>
-                                <span class="menu-label">Products</span>
+                                <span class="material-symbols-rounded" onclick="loadPage('editor.html', this)">storefront</span>
+                                <span class="menu-label">Editor</span>
                             </a>
                         </li>
                         <li class="menu-item">
                             <a href="#" class="menu-link">
-                                <span class="material-symbols-rounded">group</span>
-                                <span class="menu-label">Customers</span>
+                                <span class="material-symbols-rounded" onclick="loadPage('piano.html', this)">group</span>
+                                <span class="menu-label">Piano</span>
                             </a>
                         </li>
                         <li class="menu-item">
@@ -97,7 +97,34 @@
 
             <!-- Site main content -->
             <div class="main-content">
-                <iframe id="content-frame" src="profile.html" width="100%" height="100%"></iframe>
+                <h1 class="page-title">Profile</h1>
+                <p class="card"><strong>About myself:</strong></p>
+                <iframe src="profile.html" width="100%" height="600px" style="border:none;"></iframe>
+            </div>
+            <div class="main-content hidden">
+                <h1 class="page-title">Draw</h1>
+                <p class="card"><strong>Wowwww</strong></p>
+                <iframe src="draw.html" width="100%" height="600px" style="border:none;"></iframe>
+            </div>
+            <div class="main-content hidden">
+                <h1 class="page-title">Memory Cards</h1>
+                <p class="card"><strong>Good luck</strong></p>
+                <iframe src="card.html" width="100%" height="600px" style="border:none;"></iframe>
+            </div>
+            <div class="main-content hidden">
+                <h1 class="page-title">Hangman</h1>
+                <p class="card"><strong>Perpect</strong></p>
+                <iframe src="hangman.html" width="100%" height="600px" style="border:none;"></iframe>
+            </div>
+            <div class="main-content hidden">
+                <h1 class="page-title">Editor</h1>
+                <p class="card"><strong>Wowwww</strong></p>
+                <iframe src="editor.html" width="100%" height="600px" style="border:none;"></iframe>
+            </div>
+            <div class="main-content hidden">
+                <h1 class="page-title">Piano</h1>
+                <p class="card"><strong>Niceeee</strong></p>
+                <iframe src="piano.html" width="100%" height="600px" style="border:none;"></iframe>
             </div>
         </div>
 
