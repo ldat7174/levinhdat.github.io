@@ -59,4 +59,17 @@ function loadPage(page, clickedLink)
   if (clickedLink) {
     clickedLink.classList.add("active");
   }
+  
+function showTab(tabId, el) {
+        const contents = document.querySelectorAll('.main-content');
+        const links = document.querySelectorAll('.menu-link');
+
+        contents.forEach(content => {
+        content.classList.add('hidden');
+    });
+
+    document.getElementById(tabId).classList.remove('hidden');
+
+    links.forEach(link => link.classList.remove('active'));
+    el.classList.add('active');
 }
