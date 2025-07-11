@@ -167,6 +167,10 @@ body {
   color: var(--color-text-placeholder);
 }
 
+.sidebar.collapsed .menu-label {
+    display: none;
+}
+
 .sidebar-content .menu-list {
   display: flex;
   gap: 4px;
