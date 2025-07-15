@@ -71,3 +71,23 @@ for (let i = 97; i <= 122; i++) {
 
 getRandomWord();
 playAgainBtn.addEventListener("click", getRandomWord);
+
+// Focus vào input mỗi khi click hoặc load
+const hiddenInput = document.getElementById("hidden-input");
+document.addEventListener("click", () => hiddenInput.focus());
+window.addEventListener("load", () => hiddenInput.focus());
+
+// Xử lý nhập ký tự từ bàn phím
+hiddenInput.addEventListener("input", (e) => {
+    const letter = e.target.value.toLowerCase();
+    e.target.value = ""; // Reset sau khi gõ 1 ký tự
+
+    if (!/^[a-z]$/.test(letter)) return; // Không phải chữ cái thì bỏ qua
+
+    const button = [...keyboardDiv.querySelectorAll("button")]
+        .find(btn => btn.innerText === letter && !btn.disabled);
+
+    if (button) {
+        button.click(); // Giả lập bấm nút
+    }
+});
